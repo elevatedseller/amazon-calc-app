@@ -1,4 +1,4 @@
-import AmazonCalculator from "@/components/AmazonCalculator";
+import AmazonCalculator from "/components/AmazonCalculator";
 
 export default function Home() {
   return <AmazonCalculator />;
