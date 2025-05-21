@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: amazon-calc-web
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgres://appuser:securepassword@db:5432/appdb
+    depends_on:
+      - db
+    volumes:
+      - .:/app:ro
+
+  db:
+    image: postgres:15-alpine
+    container_name: amazon-calc-db
+    environment:
+      POSTGRES_DB: appdb
+      POSTGRES_USER: appuser
+      POSTGRES_PASSWORD: securepassword
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:
+    name: amazon_calc_db_data
