@@ -1,26 +1,23 @@
 {
   "name": "amazon-calc-app",
   "version": "1.0.0",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
-  "repository": { … },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": { … },
-  "homepage": "...",
   "dependencies": {
     "next": "^15.3.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
-  "devDependencies": {},
-  "description": ""
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elevatedseller/amazon-calc-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elevatedseller/amazon-calc-app/issues"
+  },
+  "homepage": "https://github.com/elevatedseller/amazon-calc-app#readme",
+  "license": "ISC"
 }
